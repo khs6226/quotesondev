@@ -36,7 +36,6 @@ node_modules/
 
 plugins/*
 
-
 themes/*
 !themes/quotesondev
 themes/quotesondev/node_modules/
