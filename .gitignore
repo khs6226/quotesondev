@@ -35,11 +35,11 @@ node_modules/
 !README.md
 
 plugins/*
-!plugins/inhabitent-functionality
+
 
 themes/*
-!themes/inhabitent
-themes/inhabitent/node_modules/
+!themes/quotesondev
+themes/quotesondev/node_modules/
 
 uploads/wp-migrate-db/
 
