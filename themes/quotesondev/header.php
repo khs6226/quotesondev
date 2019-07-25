@@ -23,10 +23,11 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<div class="logo">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<a href="localhost/quotesondev">
-						<img src="wp-content/themes/quotesondev/assets/qod-logo.svg" alt="Quotes on Dev logo">
-					</a>
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<a href="">
+							<img src="http://localhost/quotesondev/wp-content/themes/quotesondev/assets/qod-logo.svg" alt="Quotes on Dev logo">
+						</a>
+					</div>
 				</div><!-- .site-branding -->
 			</header><!-- #masthead -->
 
