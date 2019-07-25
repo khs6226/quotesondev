@@ -11,7 +11,8 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<?php wp_nav_menu(array('theme_location' => 'secondary')); ?>
+					<p>Brought to you by <a href="http://www.redacademy.com">Red Academy</a></p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
