@@ -221,6 +221,30 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../assets/fonts/exo-light-webfont.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../assets/fonts/exo-lightitalic-webfont.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../assets/fonts/exo-medium-webfont.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Web';
+  src: url(../../assets/fonts/exo-mediumitalic-webfont.ttf);
+  font-weight: bold;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -230,7 +254,7 @@ input,
 select,
 textarea {
   color: #ffffff;
-  font-family: "Exo Web", Arial, sans-serif;
+  font-family: "Exo Web", sans-serif;
   font-size: 16px;
   line-height: 1.5; }
 
@@ -592,6 +616,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.container {
+  max-width: 1080px;
+  width: 100%;
+  padding: 3%; }
+
 /* All Archives Page */
 /* Submit a Quote Page */
 .site-header {
