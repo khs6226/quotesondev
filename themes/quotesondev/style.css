@@ -594,6 +594,11 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.site-header {
+  margin-top: 3rem; }
+  .site-header .logo img {
+    width: 300px; }
+
 .site-info {
   display: -webkit-box;
   display: -ms-flexbox;
