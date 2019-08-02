@@ -596,6 +596,18 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.home .entry-content p {
+  font-size: 1.25rem; }
+
+.home .entry-title {
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: 400; }
+
+.home .source {
+  font-size: 1.25rem;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

@@ -24,7 +24,7 @@
 	<div class="entry-meta">
 		<?php 
 		while ($the_query->have_posts() ) : $the_query->the_post();
-			the_title('<h2 class="entry-title">', '</h2>');
+			the_title('<h2 class="entry-title">&#8212 ', '</h2>');
 			$source = get_post_meta(get_the_id(), '_qod_quote_source', true);
 			$source_url = get_post_meta(get_the_id(), '_qod_quote_source_url', true);
 		if($source && $source_url) : ?>
