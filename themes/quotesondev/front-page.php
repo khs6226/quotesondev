@@ -32,6 +32,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+		<button type="button" id="quote-button">Show Me Another!</button>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
