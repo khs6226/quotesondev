@@ -593,17 +593,31 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-.home .entry-content p {
+.home .entry-content p, .archive .entry-content p, .single .entry-content p {
   font-size: 1.25rem; }
 
-.home .entry-title {
+.home .entry-title, .archive .entry-title, .single .entry-title {
   display: inline;
   font-size: 1.25rem;
   font-weight: 400; }
 
-.home .source {
+.home .source, .archive .source, .single .source {
   font-size: 1.25rem;
   font-style: italic; }
+
+.authors-archive ul, .categories-archive ul, .tags-archive ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+  .authors-archive ul li, .categories-archive ul li, .tags-archive ul li {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1.25rem; }
 
 /*--------------------------------------------------------------
 # Media
