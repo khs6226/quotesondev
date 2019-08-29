@@ -9,7 +9,7 @@ jQuery(($) => {
 
     $quote_btn.on('click', function(event) {
         event.preventDefault();
-        jQuery.ajax({
+        $.ajax({
             method: 'GET',
             url: qod_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             beforesend: function(xhr) {
