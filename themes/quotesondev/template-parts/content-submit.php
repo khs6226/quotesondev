@@ -27,5 +27,5 @@
         <input type="url" name="url" class="url">
     </label>
 
-    <p class="submit_p"><button class="submit-button" type="submit">Submit Quote</button></p>
+    <p class="submit_p"><button class="submit-button" type="button">Submit Quote</button></p>
 </form>

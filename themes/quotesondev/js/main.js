@@ -34,9 +34,9 @@ jQuery(($) => {
         event.preventDefault();
 
         let $author= $('.author').val(),
-              $quote= $('.content').val(),
-              $source= $('.source').val(),
-              $url= $('.url').val();
+            $quote= $('.content').val(),
+            $source= $('.source').val(),
+            $url= $('.url').val();
 
         if ($author === '') {
             alert('Please provide the author of the quote.');
@@ -58,7 +58,8 @@ jQuery(($) => {
                     title : $author,
                     content : $quote,
                     quote_source : $source,
-                    quote_url : $url
+                    quote_url : $url,
+                    post_status : 'pending'
                 },
 
                 beforesend: function(xhr) {
@@ -66,13 +67,10 @@ jQuery(($) => {
                 }
             }).done(function() {
                 alert('Thank you for submitting your quote!');
-                $author = '';
-                $source = '';
-                $quote = '';
-                $url = '';
-                $('#submit-form').submit();
+                $('.submit-form')[0].reset();
             }).fail(function() {
                 alert('Please try again.');
+                $('.submit-form')[0].reset();
             });
         }
     });
