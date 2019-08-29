@@ -6,7 +6,7 @@
  */
 ?>
 
-<form action="" id="submit-form">
+<form action="" class="submit-form">
     <label for="author">
         <p class="submit_p">Author of Quote</p>
         <input type="text" name="author" class="author">

@@ -67,10 +67,11 @@ jQuery(($) => {
                 }
             }).done(function() {
                 alert('Thank you for submitting your quote!');
-                $('.submit-form')[0].reset();
+                $('form:input').val('');
+                
             }).fail(function() {
                 alert('Please try again.');
-                $('.submit-form')[0].reset();
+                $('form:input').val('');
             });
         }
     });
