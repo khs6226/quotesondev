@@ -1,9 +1,13 @@
-jQuery(() => {
+jQuery(($) => {
+    const $quote_btn = $('#quote-button'),
+          $content = $('.entry-content'),
+          $title = $('.entry-meta');
+    
     window.addEventListener('popstate', function() {
         window.location=window.location;
     });
 
-    jQuery('#quote-button').on('click', function(event) {
+    $quote_btn.on('click', function(event) {
         event.preventDefault();
         jQuery.ajax({
             method: 'GET',
@@ -14,16 +18,14 @@ jQuery(() => {
         })
         .done(function(answer) {
             history.pushState('', '', answer[0].link);
-            for(let i=0; i<answer.length; i++) {
-                jQuery('.entry-content').empty().append(
-                    `<p>${answer[i].content.rendered}</p>`);
-                jQuery('.entry-meta').empty().append(
-                    `<h2 class="entry-title">&#8212 ${answer[i].title.rendered}</h2>
+                $content.empty().append(
+                    `<p>${answer[0].content.rendered}</p>`);
+                $title.empty().append(
+                    `<h2 class="entry-title">&#8212 ${answer[0].title.rendered}</h2>
                     <span class="source">
-                        <a href="${answer[i]._qod_quote_source_url}">
-                        ${answer[i]._qod_quote_source}</a>
-                    </span>`);
-                }
+                        <a href="${answer._qod_quote_source_url}">
+                        ${answer._qod_quote_source}</a>
+                    </span>`);      
         });
     });
 });
