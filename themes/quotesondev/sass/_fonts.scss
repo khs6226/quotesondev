@@ -1,28 +1,31 @@
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+    font-family: 'Exo Web';
+    src: url('../../assets/fonts/Exo-LightItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Exo-LightItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
 
-@font-face{
+@font-face {
     font-family: 'Exo Web';
-    src: url(../../assets/fonts/exo-light-webfont.ttf);
+    src: url('../../assets/fonts/Exo-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Exo-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'Exo Web';
-    src: url(../../assets/fonts/exo-lightitalic-webfont.ttf);
-    font-weight: normal;
+    src: url('../../assets/fonts/Exo-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Exo-MediumItalic.woff') format('woff');
+    font-weight: 500;
     font-style: italic;
 }
-@font-face{
+
+@font-face {
     font-family: 'Exo Web';
-    src: url(../../assets/fonts/exo-medium-webfont.ttf);
-    font-weight: bold;
+    src: url('../../assets/fonts/Exo-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Exo-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
-}
-@font-face{
-    font-family: 'Exo Web';
-    src: url(../../assets/fonts/exo-mediumitalic-webfont.ttf);
-    font-weight: bold;
-    font-style: italic;
 }
