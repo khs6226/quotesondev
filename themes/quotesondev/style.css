@@ -597,9 +597,10 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-.site-content {
-  margin: 4.5rem 11rem 1.5rem;
-  position: relative; }
+@media (min-width: 1080px) {
+  .site-content {
+    margin: 4.5rem 11rem 1.5rem;
+    position: relative; } }
 
 .sticky {
   display: block; }
@@ -685,17 +686,18 @@ object {
 /* Submit a Quote Page */
 .site-header {
   margin-top: 3rem; }
-  .site-header .logo {
-    text-align: center; }
-    .site-header .logo img {
-      width: 300px; }
-      @media (min-width: 620px) {
-        .site-header .logo img {
-          width: 500px; } }
-      @media (min-width: 1080px) {
-        .site-header .logo img {
-          margin: 0 auto;
-          width: 700px; } }
+  @media (min-width: 1080px) {
+    .site-header .logo {
+      text-align: center; } }
+  .site-header .logo img {
+    width: 300px; }
+    @media (min-width: 620px) {
+      .site-header .logo img {
+        width: 500px; } }
+    @media (min-width: 1080px) {
+      .site-header .logo img {
+        margin: 0 auto;
+        width: 700px; } }
 
 .site-info {
   display: -webkit-box;

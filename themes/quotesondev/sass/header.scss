@@ -1,7 +1,10 @@
 .site-header{
     margin-top: 3rem;
     .logo {
-        text-align: center;
+        @include desktop {
+            text-align: center;
+        }
+        
         img{
             width: 300px;
             @include tablet {
