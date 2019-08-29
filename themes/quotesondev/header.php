@@ -24,8 +24,8 @@
 				<div class="site-branding">
 					<div class="logo">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<a href="http://localhost/quotesondev">
-							<img src="http://localhost/quotesondev/wp-content/themes/quotesondev/assets/qod-logo.svg" alt="Quotes on Dev logo">
+						<a href="<?php echo esc_url(home_url('/')); ?>">
+							<img src="<?php echo get_stylesheet_directory_uri().'/assets/qod-logo.svg'; ?>" alt="Quotes on Dev logo">
 						</a>
 					</div>
 				</div><!-- .site-branding -->
