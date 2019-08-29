@@ -35,6 +35,9 @@
 .home, .archive, .single{
 	.entry-content p{
 		font-size: 1.25rem;
+		@include tablet {
+			font-size: 1.75rem;
+		}
 	}
 } 
 
@@ -62,5 +65,8 @@
 		font-size: 1rem;
 		margin-bottom: .5rem;
 		margin-right: 1.25rem;
+		@include tablet {
+			font-size: 1.25rem;
+		}
 	}
 }

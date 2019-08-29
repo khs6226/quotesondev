@@ -8,7 +8,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 2px solid $color__green-brand;
+	border: $input__border;
 	border-radius: 3px;
 	background: $color__background-body;
 	color: $color__green-brand;
@@ -16,6 +16,9 @@ input[type="submit"] {
 	font-weight: 700;
 	line-height: 1;
 	padding: .75rem 2.25rem;
+	@include tablet {
+		font-size: 1.25rem;
+	}
 
 	&:hover {
 		border-color: $color__link-hover;
@@ -34,26 +37,27 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
+input[type="search"] {
+	padding: 5px 10px;
+	border: $input__border;
 	border-radius: 3px;
-
-	&:focus {
-		color: #111;
+	background-color: $color__background-body;
+	width: 250px;
+	font-size: 1rem;
+	font-weight: normal;
+	@include tablet {
+		font-size: 1.25rem;
+		width: 450px;
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
-}
-
 textarea {
-	padding-left: 3px;
 	width: 100%;
+	height: 100px;
+	border: $input__border;
+	border-radius: 3px;
+	background-color: $color__background-body;
+	@include tablet {
+		font-size: 1.25rem;
+	}
 }

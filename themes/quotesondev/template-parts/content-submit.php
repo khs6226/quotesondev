@@ -8,24 +8,24 @@
 
 <form action="" id="submit-form">
     <label for="author">
-        Author of Quote
+        <p class="submit_p">Author of Quote</p>
         <input type="text" name="author" id="author">
     </label>
 
     <label for="content">
-        Quote
+        <p class="submit_p">Quote</p>
         <textarea name="content" id="content"></textarea>
     </label>
 
     <label for="source">
-        Where did you find this quote? (e.g. book name)
+        <p class="submit_p">Where did you find this quote? (e.g. book name)</p>
         <input type="text" name="source" id="source">
     </label>
 
     <label for="url">
-        Provide the url of the quote source, if available
+        <p class="submit_p">Provide the url of the quote source, if available</p>
         <input type="url" name="url" id="url">
     </label>
 
-    <button class="submit-button" type="submit">Submit Quote</button>
+    <p class="submit_p"><button class="submit-button" type="submit">Submit Quote</button></p>
 </form>
